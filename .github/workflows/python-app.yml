@@ -5,14 +5,9 @@ name: Python application
 
 on:
   schedule:
-    - cron: "0 9 * * *"
-  workflow_dispatch:
+    - cron: "35 14 * * *"
     
-permissions:
-  contents: read
-
 jobs:
-
   check_invite:
     runs-on: ubuntu-latest
     steps:
