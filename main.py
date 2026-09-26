@@ -48,6 +48,8 @@ def send_email():
     body = "디스코드 초대링크가 만료되었습니다. 새로운 링크를 생성하세요."
     msg.attach(MIMEText(body, "plain"))
 
+    print(EMAIL_ADDRESS)
+    print(EMAIL_PASSWORD)
     with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
         server.starttls()
         server.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
