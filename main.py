@@ -37,13 +37,13 @@ def check_invite():
             return True
     else:
         print("초대링크가 유효하지 않습니다 (이미 만료됨).")
+        
+        print(EMAIL_ADDRESS)
+        print(EMAIL_PASSWORD)
+        print('dddddddddddd')
         return True
 
 def send_email():
-    
-    print(EMAIL_ADDRESS)
-    print(EMAIL_PASSWORD)
-    print('dddddddddddd')
     msg = MIMEMultipart()
     msg["From"] = EMAIL_ADDRESS
     msg["To"] = TO_EMAIL
